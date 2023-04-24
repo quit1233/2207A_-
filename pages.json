@@ -10,7 +10,52 @@
             "path" : "pages/list/list",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                "navigationBarTitleText": "餐饮周边",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/wish/wish",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "心愿单",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/route/route",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "烹饪行程",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/mine/mine",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/complaint/complaint",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "举报投诉",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/search/search",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "搜索",
                 "enablePullDownRefresh": false
             }
             
@@ -22,5 +67,39 @@
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
-	"uniIdRouter": {}
+	"uniIdRouter": {},
+	// 底部导航
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#f33e54",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		
+		"list": [
+			{
+				"pagePath": "pages/index/index",  //地址
+				"iconPath": "static/ICON/footer1.png",    //图标
+				"selectedIconPath": "static/ICON/footer1-sel.png",  //选中事的图标
+				"text": "首页"
+			}, 
+			{
+				"pagePath": "pages/wish/wish",
+				"iconPath": "static/ICON/footer2.png",
+				"selectedIconPath": "static/ICON/footer2-sel.png",
+				"text": "心愿订单"
+			},
+			{
+				"pagePath": "pages/route/route",
+				"iconPath": "static/ICON/footer3.png",
+				"selectedIconPath": "static/ICON/footer3-sel.png",
+				"text": "烹饪行程"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/ICON/footer4.png",
+				"selectedIconPath": "static/ICON/footer4-sel.png",
+				"text": "我的"
+			}
+		]
+	}
 }
